@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Search Video</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS Self Defined -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css">
+
+    <!-- JS Self Defined -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/basic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".fancybox").fancybox();
+        });
+    </script>
+  </head>
+  <body>
+      <div id="container">
+          <header>
+              <h1>Search<span>Video</span></h1>
+              <p>Search all Youtube video</p>
+          </header>
+          <section>
+            <form id="search-form" name="search-form" onsubmit="return search()">
+                <div class="fieldcontainer">
+                    <input type="search" id="query" class="search-field" placeholder="Search Youtube...">
+                    <input type="submit" name="search-btn" id="search-btn" value="">
+                </div>
+            </form>
+
+            <ul id="results"></ul>
+            <div id="buttons"></div>
+          </section>
+          <footer>
+              <p>Copyright &copy; 2019, All rights Reserved</p>
+          </footer>
+      </div>
+  </body>
+</html>
